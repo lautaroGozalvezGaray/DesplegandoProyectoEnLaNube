@@ -1,7 +1,7 @@
 const httpServer = require("./app");
 const minimist = require("minimist");
 
-const options = {
+/* const options = {
     alias: {
         "p": "PORT"
     },
@@ -10,7 +10,9 @@ const options = {
     }
 };
 
-const { PORT } = minimist(process.argv.slice(2), options);
+const { PORT } = minimist(process.argv.slice(2), options); */
+
+const PORT = 8080;
 
 httpServer.listen(PORT, () => {
     console.log(`Server started at http://localhost:${PORT}`);
